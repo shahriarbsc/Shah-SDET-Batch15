@@ -13,7 +13,7 @@ public class Store {
        Furniture chair= new Furniture( "Chair", 30, "brown");
        chair.print();
 
-        
+
 
     }
 }

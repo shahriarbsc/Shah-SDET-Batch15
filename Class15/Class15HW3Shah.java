@@ -6,14 +6,13 @@ public class Class15HW3Shah {
 
     // return=boolean
     // name of the method=palindrome
-    //parameter=
+    //parameter=String input
     Boolean palindrome(String str) {
         StringBuilder shah = new StringBuilder(str);
         if (str.equals(shah.reverse().toString())) {
             return true;
         } else {
             return false;
-
 
         }
     }
