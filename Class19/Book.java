@@ -1,52 +1,25 @@
 package Class19;
 public class Book {
 
-/*    String author;
-    String title;
-    int year;
-
-
-    Book(String author, String title) {
-        this.author=author;
-        this.price = price;
-
-    }
-
-    Book(String name, String author) {
-        this.name = name;
-        this.author = author;
-
-    }
-
-    void info() {
-
-        System.out.println(Author:" + author + ",Title: " + title + ", published: " + year);
-
-    }
-
-    public static void main(String[] args) {
-
-Book book = new Book( )
-    }
-}
-*/
-String name;
-
         String author;
-
+        String title;
         int year;
 
-        Book(String name, String author){
-        this.name= name;
-        this.author= author;
+        Book(String author,String title){
+                this.author=author;
+                this.title=title;
+        }
+        Book(String author,String title,int year){
+                this(author,title);
+                this.year=year;
+        }
+        void info(){
+                System.out.println("Author:"+author+", Title: "+title+", published: "+year);
         }
 
-        Book(String name, String author, int year){
-        this(name, author);
-        this.year= year;
-        }
+        public static void main(String[] args) {
 
-        void printBookInfo(){
-        System.out.println("Book Name: "+name+" Author Name: "+author+" Year of Publishes: "+year);
+                Book book =new Book("Judy Kerolus", "Java Priciples", 2023 );
+                book.info();
         }
-        }
+}
