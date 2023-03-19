@@ -1,5 +1,14 @@
 package Class17;
 import Class16.Students;
+/*
+
+Write a java class Students that have a constructor which takes students name and 3 subject grades. Inside your class also have a
+method to calculate student class for 5 different students with different marks. your program should print an average mark of each
+students name.
+
+
+
+*/
 public class HW2Students {
         private String name;
         private double grade1;
